@@ -8,6 +8,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/leaflet-search.css">
         <style>
         #map {
             width: 1029px;
@@ -28,11 +29,12 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
+        <script src="js/leaflet-search.js"></script>
         <script src="data/hkisland_0.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[22.184972506382344,114.08508327977542],[22.308605066534806,114.32917987209242]]);
+        }).fitBounds([[22.19333114264936,114.09035864505931],[22.31695632710491,114.33445523737633]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -66,7 +68,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(123,229,78,1.0)',
+                fillColor: 'rgba(123,207,89,1.0)',
                 interactive: true,
             }
                     break;
@@ -81,7 +83,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(68,201,117,1.0)',
+                fillColor: 'rgba(121,225,46,1.0)',
                 interactive: true,
             }
                     break;
@@ -96,7 +98,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(21,232,42,1.0)',
+                fillColor: 'rgba(134,114,223,1.0)',
                 interactive: true,
             }
                     break;
@@ -111,7 +113,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(181,218,14,1.0)',
+                fillColor: 'rgba(62,185,206,1.0)',
                 interactive: true,
             }
                     break;
@@ -126,7 +128,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(116,22,230,1.0)',
+                fillColor: 'rgba(122,45,216,1.0)',
                 interactive: true,
             }
                     break;
@@ -141,7 +143,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(154,34,201,1.0)',
+                fillColor: 'rgba(159,40,210,1.0)',
                 interactive: true,
             }
                     break;
@@ -156,7 +158,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(205,51,27,1.0)',
+                fillColor: 'rgba(232,222,77,1.0)',
                 interactive: true,
             }
                     break;
@@ -171,7 +173,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(55,211,92,1.0)',
+                fillColor: 'rgba(66,145,234,1.0)',
                 interactive: true,
             }
                     break;
@@ -186,7 +188,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(235,54,169,1.0)',
+                fillColor: 'rgba(129,214,138,1.0)',
                 interactive: true,
             }
                     break;
@@ -201,7 +203,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(237,104,55,1.0)',
+                fillColor: 'rgba(218,98,18,1.0)',
                 interactive: true,
             }
                     break;
@@ -216,7 +218,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(16,126,204,1.0)',
+                fillColor: 'rgba(201,94,191,1.0)',
                 interactive: true,
             }
                     break;
@@ -231,7 +233,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(54,240,147,1.0)',
+                fillColor: 'rgba(45,56,200,1.0)',
                 interactive: true,
             }
                     break;
@@ -246,7 +248,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(220,230,17,1.0)',
+                fillColor: 'rgba(77,202,154,1.0)',
                 interactive: true,
             }
                     break;
@@ -261,7 +263,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(220,230,17,1.0)',
+                fillColor: 'rgba(77,202,154,1.0)',
                 interactive: true,
             }
                     break;
@@ -276,7 +278,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(84,95,239,1.0)',
+                fillColor: 'rgba(80,203,125,1.0)',
                 interactive: true,
             }
                     break;
@@ -291,7 +293,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(215,35,32,1.0)',
+                fillColor: 'rgba(202,147,37,1.0)',
                 interactive: true,
             }
                     break;
@@ -306,7 +308,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(116,202,203,1.0)',
+                fillColor: 'rgba(237,98,77,1.0)',
                 interactive: true,
             }
                     break;
@@ -321,7 +323,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(207,105,183,1.0)',
+                fillColor: 'rgba(25,134,207,1.0)',
                 interactive: true,
             }
                     break;
@@ -336,7 +338,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(60,202,167,1.0)',
+                fillColor: 'rgba(40,219,34,1.0)',
                 interactive: true,
             }
                     break;
@@ -351,7 +353,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(62,209,32,1.0)',
+                fillColor: 'rgba(19,203,62,1.0)',
                 interactive: true,
             }
                     break;
@@ -366,7 +368,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(103,221,178,1.0)',
+                fillColor: 'rgba(142,47,210,1.0)',
                 interactive: true,
             }
                     break;
@@ -381,7 +383,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(227,83,138,1.0)',
+                fillColor: 'rgba(120,235,237,1.0)',
                 interactive: true,
             }
                     break;
@@ -396,7 +398,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(56,43,235,1.0)',
+                fillColor: 'rgba(15,169,224,1.0)',
                 interactive: true,
             }
                     break;
@@ -411,7 +413,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(214,107,134,1.0)',
+                fillColor: 'rgba(209,161,105,1.0)',
                 interactive: true,
             }
                     break;
@@ -426,7 +428,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(223,34,132,1.0)',
+                fillColor: 'rgba(142,235,125,1.0)',
                 interactive: true,
             }
                     break;
@@ -441,7 +443,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(62,218,200,1.0)',
+                fillColor: 'rgba(16,215,165,1.0)',
                 interactive: true,
             }
                     break;
@@ -456,7 +458,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(62,218,200,1.0)',
+                fillColor: 'rgba(16,215,165,1.0)',
                 interactive: true,
             }
                     break;
@@ -471,7 +473,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(221,177,127,1.0)',
+                fillColor: 'rgba(232,50,120,1.0)',
                 interactive: true,
             }
                     break;
@@ -486,7 +488,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(236,220,35,1.0)',
+                fillColor: 'rgba(65,223,205,1.0)',
                 interactive: true,
             }
                     break;
@@ -501,7 +503,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(157,79,213,1.0)',
+                fillColor: 'rgba(228,126,88,1.0)',
                 interactive: true,
             }
                     break;
@@ -516,7 +518,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(150,125,205,1.0)',
+                fillColor: 'rgba(130,161,223,1.0)',
                 interactive: true,
             }
                     break;
@@ -531,7 +533,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(179,230,67,1.0)',
+                fillColor: 'rgba(138,94,231,1.0)',
                 interactive: true,
             }
                     break;
@@ -546,7 +548,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(227,133,218,1.0)',
+                fillColor: 'rgba(191,41,221,1.0)',
                 interactive: true,
             }
                     break;
@@ -561,7 +563,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(43,201,229,1.0)',
+                fillColor: 'rgba(195,228,122,1.0)',
                 interactive: true,
             }
                     break;
@@ -576,7 +578,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(146,206,99,1.0)',
+                fillColor: 'rgba(239,15,42,1.0)',
                 interactive: true,
             }
                     break;
@@ -591,7 +593,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(130,113,208,1.0)',
+                fillColor: 'rgba(200,14,61,1.0)',
                 interactive: true,
             }
                     break;
@@ -606,7 +608,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(95,120,217,1.0)',
+                fillColor: 'rgba(219,74,168,1.0)',
                 interactive: true,
             }
                     break;
@@ -621,7 +623,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(57,184,233,1.0)',
+                fillColor: 'rgba(23,61,213,1.0)',
                 interactive: true,
             }
                     break;
@@ -636,7 +638,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(117,151,217,1.0)',
+                fillColor: 'rgba(148,234,43,1.0)',
                 interactive: true,
             }
                     break;
@@ -651,7 +653,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(238,108,21,1.0)',
+                fillColor: 'rgba(33,226,130,1.0)',
                 interactive: true,
             }
                     break;
@@ -666,7 +668,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(234,36,59,1.0)',
+                fillColor: 'rgba(206,81,146,1.0)',
                 interactive: true,
             }
                     break;
@@ -681,7 +683,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(158,236,54,1.0)',
+                fillColor: 'rgba(201,213,28,1.0)',
                 interactive: true,
             }
                     break;
@@ -696,7 +698,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(206,151,39,1.0)',
+                fillColor: 'rgba(193,213,113,1.0)',
                 interactive: true,
             }
                     break;
@@ -711,7 +713,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(198,69,202,1.0)',
+                fillColor: 'rgba(129,125,206,1.0)',
                 interactive: true,
             }
                     break;
@@ -726,7 +728,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(192,23,225,1.0)',
+                fillColor: 'rgba(215,132,218,1.0)',
                 interactive: true,
             }
                     break;
@@ -741,7 +743,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(23,229,16,1.0)',
+                fillColor: 'rgba(240,101,101,1.0)',
                 interactive: true,
             }
                     break;
@@ -784,7 +786,16 @@
                 this._div.innerHTML = '<h2>Hong Kong District</h2>';
             };
             title.addTo(map);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{"OpenStreetMap": layer_OpenStreetMap_1,'hkisland<br /><table><tr><td style="text-align: center;"><img src="legend/hkisland_0_七姊妹0.png" /></td><td>七姊妹</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_上環1.png" /></td><td>上環</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_中環2.png" /></td><td>中環</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_北角3.png" /></td><td>北角</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_半山區4.png" /></td><td>半山區</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_堅尼地城5.png" /></td><td>堅尼地城</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_大坑6.png" /></td><td>大坑</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_大潭7.png" /></td><td>大潭</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_大潭峽8.png" /></td><td>大潭峽</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_天后9.png" /></td><td>天后</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_寶馬山10.png" /></td><td>寶馬山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_小西灣11.png" /></td><td>小西灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_山頂12.png" /></td><td>山頂</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_愛秩序灣13.png" /></td><td>愛秩序灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_摩星嶺14.png" /></td><td>摩星嶺</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_數碼港15.png" /></td><td>數碼港</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_杏花邨16.png" /></td><td>杏花邨</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_柴灣17.png" /></td><td>柴灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_柴灣峽18.png" /></td><td>柴灣峽</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_沙灣19.png" /></td><td>沙灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_深水灣20.png" /></td><td>深水灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_淺水灣21.png" /></td><td>淺水灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_渣甸山22.png" /></td><td>渣甸山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_灣仔23.png" /></td><td>灣仔</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_炮台山24.png" /></td><td>炮台山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_田灣25.png" /></td><td>田灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_石塘咀26.png" /></td><td>石塘咀</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_石澳27.png" /></td><td>石澳</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_筲箕灣28.png" /></td><td>筲箕灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_舂坎角29.png" /></td><td>舂坎角</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_薄扶林30.png" /></td><td>薄扶林</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_西灣山31.png" /></td><td>西灣山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_西灣河32.png" /></td><td>西灣河</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_西營盤33.png" /></td><td>西營盤</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_赤柱34.png" /></td><td>赤柱</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_跑馬地35.png" /></td><td>跑馬地</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_金鐘36.png" /></td><td>金鐘</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_銅鑼灣37.png" /></td><td>銅鑼灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_阿公岩38.png" /></td><td>阿公岩</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_青洲39.png" /></td><td>青洲</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_香港仔40.png" /></td><td>香港仔</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_鰂魚涌41.png" /></td><td>鰂魚涌</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_鴨脷洲42.png" /></td><td>鴨脷洲</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_黃竹坑43.png" /></td><td>黃竹坑</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_龍虎山44.png" /></td><td>龍虎山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_45.png" /></td><td></td></tr></table>': layer_hkisland_0,}).addTo(map);
         setBounds();
+        map.addControl(new L.Control.Search({
+            layer: layer_hkisland_0,
+            initial: false,
+            hideMarkerOnCollapse: true,
+            propertyName: 'OBJECTID'}));
+        document.getElementsByClassName('search-button')[0].className +=
+         ' fa fa-binoculars';
         </script>
     </body>
 </html>
