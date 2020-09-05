@@ -28,7 +28,8 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="data/hkisland_0.js"></script>
+        <script src="data/KowloonCity_YTM_SSP_TsingYi_0.js"></script>
+        <script src="data/hkisland_1.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -39,7 +40,7 @@
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-        function pop_hkisland_0(feature, layer) {
+        function pop_KowloonCity_YTM_SSP_TsingYi_0(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['OBJECTID'] !== null ? autolinker.link(feature.properties['OBJECTID'].toLocaleString()) : '') + '</td>\
@@ -81,11 +82,521 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_hkisland_0_0(feature) {
+        function style_KowloonCity_YTM_SSP_TsingYi_0_0(feature) {
+            switch(String(feature.properties['SubDist_ZH'])) {
+                case '九龍城':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(240,129,181,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '九龍塘':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(208,117,103,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '佐敦':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(110,239,153,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '何文田':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(220,17,153,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '加多利山':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(217,204,13,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '十二號山':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(105,197,211,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '啟德':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(207,140,63,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '土瓜灣':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(128,236,89,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '大角咀':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(121,174,201,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '太子':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(171,94,201,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '尖沙咀':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(204,67,76,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '採石山':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(15,218,123,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '旺角':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(206,44,185,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '油麻地':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(62,217,83,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '深水埗':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(234,117,58,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '石硤尾':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(48,59,212,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '紅磡':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(164,223,46,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '美孚':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(122,64,237,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '老龍坑':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(77,221,66,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '荔景':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(190,215,23,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '荔枝角':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(165,235,104,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '葵涌':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(216,74,112,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '葵芳':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(221,114,230,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '長沙灣':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(147,67,221,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '青衣':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(83,204,196,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '靠背壟':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(112,140,219,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '馬頭圍':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(33,230,178,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '馬頭角':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(21,106,202,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '黃埔':
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(79,59,207,1.0)',
+                interactive: true,
+            }
+                    break;
+                default:
+                    return {
+                pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(224,180,59,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_KowloonCity_YTM_SSP_TsingYi_0');
+        map.getPane('pane_KowloonCity_YTM_SSP_TsingYi_0').style.zIndex = 400;
+        map.getPane('pane_KowloonCity_YTM_SSP_TsingYi_0').style['mix-blend-mode'] = 'normal';
+        var layer_KowloonCity_YTM_SSP_TsingYi_0 = new L.geoJson(json_KowloonCity_YTM_SSP_TsingYi_0, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_KowloonCity_YTM_SSP_TsingYi_0',
+            layerName: 'layer_KowloonCity_YTM_SSP_TsingYi_0',
+            pane: 'pane_KowloonCity_YTM_SSP_TsingYi_0',
+            onEachFeature: pop_KowloonCity_YTM_SSP_TsingYi_0,
+            style: style_KowloonCity_YTM_SSP_TsingYi_0_0,
+        });
+        bounds_group.addLayer(layer_KowloonCity_YTM_SSP_TsingYi_0);
+        map.addLayer(layer_KowloonCity_YTM_SSP_TsingYi_0);
+        function pop_hkisland_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['OBJECTID'] !== null ? autolinker.link(feature.properties['OBJECTID'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PPU'] !== null ? autolinker.link(feature.properties['PPU'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SPU'] !== null ? autolinker.link(feature.properties['SPU'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TPU'] !== null ? autolinker.link(feature.properties['TPU'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SB_VC'] !== null ? autolinker.link(feature.properties['SB_VC'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TYPE_Eng'] !== null ? autolinker.link(feature.properties['TYPE_Eng'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TYPE_TC'] !== null ? autolinker.link(feature.properties['TYPE_TC'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TYPE_SC'] !== null ? autolinker.link(feature.properties['TYPE_SC'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Shape_Leng'] !== null ? autolinker.link(feature.properties['Shape_Leng'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Shape_Area'] !== null ? autolinker.link(feature.properties['Shape_Area'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SubDist_ZH'] !== null ? autolinker.link(feature.properties['SubDist_ZH'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Distrct_ZH'] !== null ? autolinker.link(feature.properties['Distrct_ZH'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_hkisland_1_0(feature) {
             switch(String(feature.properties['SubDist_ZH'])) {
                 case '七姊妹':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -100,7 +611,7 @@
                     break;
                 case '上環':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -115,7 +626,7 @@
                     break;
                 case '中環':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -130,7 +641,7 @@
                     break;
                 case '北角':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -145,7 +656,7 @@
                     break;
                 case '半山區':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -160,7 +671,7 @@
                     break;
                 case '堅尼地城':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -175,7 +686,7 @@
                     break;
                 case '大坑':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -190,7 +701,7 @@
                     break;
                 case '大潭':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -205,7 +716,7 @@
                     break;
                 case '大潭峽':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -220,7 +731,7 @@
                     break;
                 case '天后':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -235,7 +746,7 @@
                     break;
                 case '寶馬山':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -250,7 +761,7 @@
                     break;
                 case '小西灣':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -265,7 +776,7 @@
                     break;
                 case '山頂':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -280,7 +791,7 @@
                     break;
                 case '愛秩序灣':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -295,7 +806,7 @@
                     break;
                 case '摩星嶺':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -310,7 +821,7 @@
                     break;
                 case '數碼港':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -325,7 +836,7 @@
                     break;
                 case '杏花邨':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -340,7 +851,7 @@
                     break;
                 case '柴灣':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -355,7 +866,7 @@
                     break;
                 case '柴灣峽':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -370,7 +881,7 @@
                     break;
                 case '沙灣':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -385,7 +896,7 @@
                     break;
                 case '深水灣':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -400,7 +911,7 @@
                     break;
                 case '淺水灣':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -415,7 +926,7 @@
                     break;
                 case '渣甸山':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -430,7 +941,7 @@
                     break;
                 case '灣仔':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -445,7 +956,7 @@
                     break;
                 case '炮台山':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -460,7 +971,7 @@
                     break;
                 case '田灣':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -475,7 +986,7 @@
                     break;
                 case '石塘咀':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -490,7 +1001,7 @@
                     break;
                 case '石澳':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -505,7 +1016,7 @@
                     break;
                 case '筲箕灣':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -520,7 +1031,7 @@
                     break;
                 case '舂坎角':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -535,7 +1046,7 @@
                     break;
                 case '薄扶林':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -550,7 +1061,7 @@
                     break;
                 case '西灣山':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -565,7 +1076,7 @@
                     break;
                 case '西灣河':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -580,7 +1091,7 @@
                     break;
                 case '西營盤':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -595,7 +1106,7 @@
                     break;
                 case '赤柱':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -610,7 +1121,7 @@
                     break;
                 case '跑馬地':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -625,7 +1136,7 @@
                     break;
                 case '金鐘':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -640,7 +1151,7 @@
                     break;
                 case '銅鑼灣':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -655,7 +1166,7 @@
                     break;
                 case '阿公岩':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -670,7 +1181,7 @@
                     break;
                 case '香港仔':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -685,7 +1196,7 @@
                     break;
                 case '鰂魚涌':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -700,7 +1211,7 @@
                     break;
                 case '鴨脷洲':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -715,7 +1226,7 @@
                     break;
                 case '黃竹坑':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -730,7 +1241,7 @@
                     break;
                 case '龍虎山':
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -745,7 +1256,7 @@
                     break;
                 default:
                     return {
-                pane: 'pane_hkisland_0',
+                pane: 'pane_hkisland_1',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -760,24 +1271,24 @@
                     break;
             }
         }
-        map.createPane('pane_hkisland_0');
-        map.getPane('pane_hkisland_0').style.zIndex = 400;
-        map.getPane('pane_hkisland_0').style['mix-blend-mode'] = 'normal';
-        var layer_hkisland_0 = new L.geoJson(json_hkisland_0, {
+        map.createPane('pane_hkisland_1');
+        map.getPane('pane_hkisland_1').style.zIndex = 401;
+        map.getPane('pane_hkisland_1').style['mix-blend-mode'] = 'normal';
+        var layer_hkisland_1 = new L.geoJson(json_hkisland_1, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_hkisland_0',
-            layerName: 'layer_hkisland_0',
-            pane: 'pane_hkisland_0',
-            onEachFeature: pop_hkisland_0,
-            style: style_hkisland_0_0,
+            dataVar: 'json_hkisland_1',
+            layerName: 'layer_hkisland_1',
+            pane: 'pane_hkisland_1',
+            onEachFeature: pop_hkisland_1,
+            style: style_hkisland_1_0,
         });
-        bounds_group.addLayer(layer_hkisland_0);
-        map.addLayer(layer_hkisland_0);
-        map.createPane('pane_OpenStreetMap_1');
-        map.getPane('pane_OpenStreetMap_1').style.zIndex = 401;
-        var layer_OpenStreetMap_1 = L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            pane: 'pane_OpenStreetMap_1',
+        bounds_group.addLayer(layer_hkisland_1);
+        map.addLayer(layer_hkisland_1);
+        map.createPane('pane_OpenStreetMap_2');
+        map.getPane('pane_OpenStreetMap_2').style.zIndex = 402;
+        var layer_OpenStreetMap_2 = L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            pane: 'pane_OpenStreetMap_2',
             opacity: 0.4,
             attribution: '',
             minZoom: 1,
@@ -785,8 +1296,8 @@
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
-        layer_OpenStreetMap_1;
-        map.addLayer(layer_OpenStreetMap_1);
+        layer_OpenStreetMap_2;
+        map.addLayer(layer_OpenStreetMap_2);
             var title = new L.Control();
             title.onAdd = function (map) {
                 this._div = L.DomUtil.create('div', 'info');
@@ -798,7 +1309,7 @@
             };
             title.addTo(map);
         var baseMaps = {};
-        L.control.layers(baseMaps,{"OpenStreetMap": layer_OpenStreetMap_1,'hkisland<br /><table><tr><td style="text-align: center;"><img src="legend/hkisland_0_七姊妹0.png" /></td><td>七姊妹</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_上環1.png" /></td><td>上環</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_中環2.png" /></td><td>中環</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_北角3.png" /></td><td>北角</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_半山區4.png" /></td><td>半山區</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_堅尼地城5.png" /></td><td>堅尼地城</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_大坑6.png" /></td><td>大坑</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_大潭7.png" /></td><td>大潭</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_大潭峽8.png" /></td><td>大潭峽</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_天后9.png" /></td><td>天后</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_寶馬山10.png" /></td><td>寶馬山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_小西灣11.png" /></td><td>小西灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_山頂12.png" /></td><td>山頂</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_愛秩序灣13.png" /></td><td>愛秩序灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_摩星嶺14.png" /></td><td>摩星嶺</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_數碼港15.png" /></td><td>數碼港</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_杏花邨16.png" /></td><td>杏花邨</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_柴灣17.png" /></td><td>柴灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_柴灣峽18.png" /></td><td>柴灣峽</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_沙灣19.png" /></td><td>沙灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_深水灣20.png" /></td><td>深水灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_淺水灣21.png" /></td><td>淺水灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_渣甸山22.png" /></td><td>渣甸山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_灣仔23.png" /></td><td>灣仔</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_炮台山24.png" /></td><td>炮台山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_田灣25.png" /></td><td>田灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_石塘咀26.png" /></td><td>石塘咀</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_石澳27.png" /></td><td>石澳</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_筲箕灣28.png" /></td><td>筲箕灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_舂坎角29.png" /></td><td>舂坎角</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_薄扶林30.png" /></td><td>薄扶林</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_西灣山31.png" /></td><td>西灣山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_西灣河32.png" /></td><td>西灣河</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_西營盤33.png" /></td><td>西營盤</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_赤柱34.png" /></td><td>赤柱</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_跑馬地35.png" /></td><td>跑馬地</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_金鐘36.png" /></td><td>金鐘</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_銅鑼灣37.png" /></td><td>銅鑼灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_阿公岩38.png" /></td><td>阿公岩</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_香港仔39.png" /></td><td>香港仔</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_鰂魚涌40.png" /></td><td>鰂魚涌</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_鴨脷洲41.png" /></td><td>鴨脷洲</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_黃竹坑42.png" /></td><td>黃竹坑</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_龍虎山43.png" /></td><td>龍虎山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_0_44.png" /></td><td></td></tr></table>': layer_hkisland_0,}).addTo(map);
+        L.control.layers(baseMaps,{"OpenStreetMap": layer_OpenStreetMap_2,'hkisland<br /><table><tr><td style="text-align: center;"><img src="legend/hkisland_1_七姊妹0.png" /></td><td>七姊妹</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_上環1.png" /></td><td>上環</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_中環2.png" /></td><td>中環</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_北角3.png" /></td><td>北角</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_半山區4.png" /></td><td>半山區</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_堅尼地城5.png" /></td><td>堅尼地城</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_大坑6.png" /></td><td>大坑</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_大潭7.png" /></td><td>大潭</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_大潭峽8.png" /></td><td>大潭峽</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_天后9.png" /></td><td>天后</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_寶馬山10.png" /></td><td>寶馬山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_小西灣11.png" /></td><td>小西灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_山頂12.png" /></td><td>山頂</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_愛秩序灣13.png" /></td><td>愛秩序灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_摩星嶺14.png" /></td><td>摩星嶺</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_數碼港15.png" /></td><td>數碼港</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_杏花邨16.png" /></td><td>杏花邨</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_柴灣17.png" /></td><td>柴灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_柴灣峽18.png" /></td><td>柴灣峽</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_沙灣19.png" /></td><td>沙灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_深水灣20.png" /></td><td>深水灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_淺水灣21.png" /></td><td>淺水灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_渣甸山22.png" /></td><td>渣甸山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_灣仔23.png" /></td><td>灣仔</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_炮台山24.png" /></td><td>炮台山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_田灣25.png" /></td><td>田灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_石塘咀26.png" /></td><td>石塘咀</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_石澳27.png" /></td><td>石澳</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_筲箕灣28.png" /></td><td>筲箕灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_舂坎角29.png" /></td><td>舂坎角</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_薄扶林30.png" /></td><td>薄扶林</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_西灣山31.png" /></td><td>西灣山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_西灣河32.png" /></td><td>西灣河</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_西營盤33.png" /></td><td>西營盤</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_赤柱34.png" /></td><td>赤柱</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_跑馬地35.png" /></td><td>跑馬地</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_金鐘36.png" /></td><td>金鐘</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_銅鑼灣37.png" /></td><td>銅鑼灣</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_阿公岩38.png" /></td><td>阿公岩</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_香港仔39.png" /></td><td>香港仔</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_鰂魚涌40.png" /></td><td>鰂魚涌</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_鴨脷洲41.png" /></td><td>鴨脷洲</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_黃竹坑42.png" /></td><td>黃竹坑</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_龍虎山43.png" /></td><td>龍虎山</td></tr><tr><td style="text-align: center;"><img src="legend/hkisland_1_44.png" /></td><td></td></tr></table>': layer_hkisland_1,'KowloonCity_YTM_SSP_TsingYi<br /><table><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_九龍城0.png" /></td><td>九龍城</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_九龍塘1.png" /></td><td>九龍塘</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_佐敦2.png" /></td><td>佐敦</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_何文田3.png" /></td><td>何文田</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_加多利山4.png" /></td><td>加多利山</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_十二號山5.png" /></td><td>十二號山</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_啟德6.png" /></td><td>啟德</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_土瓜灣7.png" /></td><td>土瓜灣</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_大角咀8.png" /></td><td>大角咀</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_太子9.png" /></td><td>太子</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_尖沙咀10.png" /></td><td>尖沙咀</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_採石山11.png" /></td><td>採石山</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_旺角12.png" /></td><td>旺角</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_油麻地13.png" /></td><td>油麻地</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_深水埗14.png" /></td><td>深水埗</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_石硤尾15.png" /></td><td>石硤尾</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_紅磡16.png" /></td><td>紅磡</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_美孚17.png" /></td><td>美孚</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_老龍坑18.png" /></td><td>老龍坑</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_荔景19.png" /></td><td>荔景</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_荔枝角20.png" /></td><td>荔枝角</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_葵涌21.png" /></td><td>葵涌</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_葵芳22.png" /></td><td>葵芳</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_長沙灣23.png" /></td><td>長沙灣</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_青衣24.png" /></td><td>青衣</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_靠背壟25.png" /></td><td>靠背壟</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_馬頭圍26.png" /></td><td>馬頭圍</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_馬頭角27.png" /></td><td>馬頭角</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_黃埔28.png" /></td><td>黃埔</td></tr><tr><td style="text-align: center;"><img src="legend/KowloonCity_YTM_SSP_TsingYi_0_29.png" /></td><td></td></tr></table>': layer_KowloonCity_YTM_SSP_TsingYi_0,}).addTo(map);
         setBounds();
         </script>
     </body>
