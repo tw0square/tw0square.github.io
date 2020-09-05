@@ -14,7 +14,7 @@
             height: 564px;
         }
         </style>
-        <title>Hong Kong District</title>
+        <title>Hong Kong Sub District</title>
     </head>
     <body>
         <div id="map">
@@ -28,18 +28,18 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="data/hkisland_district_0.js"></script>
+        <script src="data/hkisland_0.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[22.193783205871455,114.09792251093857],[22.290735639808695,114.28933641675067]]);
+        }).fitBounds([[22.07791495624897,113.61138358105278],[22.63382444032266,114.70981824647727]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-        function pop_hkisland_district_0(feature, layer) {
+        function pop_hkisland_0(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['OBJECTID'] !== null ? autolinker.link(feature.properties['OBJECTID'].toLocaleString()) : '') + '</td>\
@@ -74,24 +74,18 @@
                     <tr>\
                         <td colspan="2">' + (feature.properties['SubDist_ZH'] !== null ? autolinker.link(feature.properties['SubDist_ZH'].toLocaleString()) : '') + '</td>\
                     </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Distrct_ZH'] !== null ? autolinker.link(feature.properties['Distrct_ZH'].toLocaleString()) : '') + '</td>\
+                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        var pattern_hkisland_district_0_0 = new L.StripePattern({
-            weight: 0.3,
-            spaceWeight: 2.0,
-            color: '#000000',
-            opacity: 1.0,
-            spaceOpacity: 0,
-            angle: 315
-        });
-        pattern_hkisland_district_0_0.addTo(map);
-        function style_hkisland_district_0_0(feature) {
+        function style_hkisland_0_0(feature) {
             switch(String(feature.properties['SubDist_ZH'])) {
                 case '七姊妹':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -100,13 +94,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(31,61,209,1.0)',
+                fillColor: 'rgba(210,46,142,1.0)',
                 interactive: true,
             }
                     break;
                 case '上環':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -115,13 +109,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(82,146,220,1.0)',
+                fillColor: 'rgba(214,101,182,1.0)',
                 interactive: true,
             }
                     break;
                 case '中環':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -130,13 +124,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(42,164,204,1.0)',
+                fillColor: 'rgba(227,55,133,1.0)',
                 interactive: true,
             }
                     break;
                 case '北角':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -145,13 +139,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(147,203,87,1.0)',
+                fillColor: 'rgba(239,125,146,1.0)',
                 interactive: true,
             }
                     break;
                 case '半山區':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -160,13 +154,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(232,238,33,1.0)',
+                fillColor: 'rgba(31,206,69,1.0)',
                 interactive: true,
             }
                     break;
                 case '堅尼地城':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -175,13 +169,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(220,42,220,1.0)',
+                fillColor: 'rgba(210,71,208,1.0)',
                 interactive: true,
             }
                     break;
                 case '大坑':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -190,13 +184,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(87,203,147,1.0)',
+                fillColor: 'rgba(219,133,107,1.0)',
                 interactive: true,
             }
                     break;
                 case '大潭':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -205,13 +199,28 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(86,212,206,1.0)',
+                fillColor: 'rgba(222,193,104,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '大潭峽':
+                    return {
+                pane: 'pane_hkisland_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(209,231,83,1.0)',
                 interactive: true,
             }
                     break;
                 case '天后':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -220,13 +229,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(206,225,122,1.0)',
+                fillColor: 'rgba(34,217,24,1.0)',
                 interactive: true,
             }
                     break;
                 case '寶馬山':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -235,13 +244,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(178,109,207,1.0)',
+                fillColor: 'rgba(32,200,113,1.0)',
                 interactive: true,
             }
                     break;
                 case '小西灣':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -250,13 +259,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(225,45,174,1.0)',
+                fillColor: 'rgba(36,200,137,1.0)',
                 interactive: true,
             }
                     break;
                 case '山頂':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -265,13 +274,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(236,205,112,1.0)',
+                fillColor: 'rgba(161,218,15,1.0)',
                 interactive: true,
             }
                     break;
                 case '愛秩序灣':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -280,13 +289,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(15,205,85,1.0)',
+                fillColor: 'rgba(226,211,91,1.0)',
                 interactive: true,
             }
                     break;
                 case '摩星嶺':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -295,13 +304,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(227,60,155,1.0)',
+                fillColor: 'rgba(127,213,134,1.0)',
                 interactive: true,
             }
                     break;
                 case '數碼港':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -310,13 +319,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(92,224,238,1.0)',
+                fillColor: 'rgba(127,213,134,1.0)',
                 interactive: true,
             }
                     break;
                 case '杏花邨':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -325,13 +334,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(239,33,212,1.0)',
+                fillColor: 'rgba(19,208,85,1.0)',
                 interactive: true,
             }
                     break;
                 case '柴灣':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -340,13 +349,43 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(207,15,12,1.0)',
+                fillColor: 'rgba(235,70,78,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '柴灣峽':
+                    return {
+                pane: 'pane_hkisland_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(54,224,182,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '沙灣':
+                    return {
+                pane: 'pane_hkisland_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(222,111,236,1.0)',
                 interactive: true,
             }
                     break;
                 case '深水灣':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -355,13 +394,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(208,50,95,1.0)',
+                fillColor: 'rgba(129,186,226,1.0)',
                 interactive: true,
             }
                     break;
                 case '淺水灣':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -370,13 +409,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(205,84,100,1.0)',
+                fillColor: 'rgba(175,79,207,1.0)',
                 interactive: true,
             }
                     break;
                 case '渣甸山':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -385,13 +424,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(216,197,53,1.0)',
+                fillColor: 'rgba(218,124,73,1.0)',
                 interactive: true,
             }
                     break;
                 case '灣仔':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -400,13 +439,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(56,202,173,1.0)',
+                fillColor: 'rgba(27,157,208,1.0)',
                 interactive: true,
             }
                     break;
                 case '炮台山':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -415,13 +454,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(31,137,203,1.0)',
+                fillColor: 'rgba(174,229,97,1.0)',
                 interactive: true,
             }
                     break;
                 case '田灣':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -430,13 +469,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(205,78,52,1.0)',
+                fillColor: 'rgba(22,198,201,1.0)',
                 interactive: true,
             }
                     break;
                 case '石塘咀':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -445,13 +484,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(134,68,226,1.0)',
+                fillColor: 'rgba(33,240,216,1.0)',
                 interactive: true,
             }
                     break;
                 case '石澳':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -460,13 +499,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(88,204,80,1.0)',
+                fillColor: 'rgba(69,187,208,1.0)',
                 interactive: true,
             }
                     break;
                 case '筲箕灣':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -475,13 +514,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(175,208,109,1.0)',
+                fillColor: 'rgba(128,99,232,1.0)',
                 interactive: true,
             }
                     break;
                 case '舂坎角':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -490,13 +529,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(62,225,75,1.0)',
+                fillColor: 'rgba(223,226,44,1.0)',
                 interactive: true,
             }
                     break;
                 case '薄扶林':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -505,13 +544,28 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(226,81,18,1.0)',
+                fillColor: 'rgba(223,226,44,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '西灣山':
+                    return {
+                pane: 'pane_hkisland_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(47,101,217,1.0)',
                 interactive: true,
             }
                     break;
                 case '西灣河':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -520,13 +574,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(96,207,31,1.0)',
+                fillColor: 'rgba(139,212,122,1.0)',
                 interactive: true,
             }
                     break;
                 case '西營盤':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -535,13 +589,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(129,132,226,1.0)',
+                fillColor: 'rgba(217,79,66,1.0)',
                 interactive: true,
             }
                     break;
                 case '赤柱':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -550,13 +604,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(158,76,224,1.0)',
+                fillColor: 'rgba(213,153,97,1.0)',
                 interactive: true,
             }
                     break;
                 case '跑馬地':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -565,13 +619,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(71,115,209,1.0)',
+                fillColor: 'rgba(203,162,95,1.0)',
                 interactive: true,
             }
                     break;
                 case '金鐘':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -580,13 +634,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(205,142,91,1.0)',
+                fillColor: 'rgba(95,117,218,1.0)',
                 interactive: true,
             }
                     break;
                 case '銅鑼灣':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -595,13 +649,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(61,201,92,1.0)',
+                fillColor: 'rgba(186,114,231,1.0)',
                 interactive: true,
             }
                     break;
                 case '阿公岩':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -610,28 +664,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(89,217,53,1.0)',
-                interactive: true,
-            }
-                    break;
-                case '青洲':
-                    return {
-                pane: 'pane_hkisland_district_0',
-                opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                weight: 1.0, 
-                fill: true,
-                fillOpacity: 1,
-                fillColor: 'rgba(97,54,214,1.0)',
+                fillColor: 'rgba(177,236,129,1.0)',
                 interactive: true,
             }
                     break;
                 case '香港仔':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -640,13 +679,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(123,237,199,1.0)',
+                fillColor: 'rgba(110,100,221,1.0)',
                 interactive: true,
             }
                     break;
                 case '鰂魚涌':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -655,13 +694,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(236,26,113,1.0)',
+                fillColor: 'rgba(83,225,17,1.0)',
                 interactive: true,
             }
                     break;
                 case '鴨脷洲':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -670,13 +709,13 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(107,90,239,1.0)',
+                fillColor: 'rgba(81,137,206,1.0)',
                 interactive: true,
             }
                     break;
                 case '黃竹坑':
                     return {
-                pane: 'pane_hkisland_district_0',
+                pane: 'pane_hkisland_0',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -685,40 +724,61 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(203,32,233,1.0)',
+                fillColor: 'rgba(118,65,216,1.0)',
+                interactive: true,
+            }
+                    break;
+                case '龍虎山':
+                    return {
+                pane: 'pane_hkisland_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(165,103,231,1.0)',
                 interactive: true,
             }
                     break;
                 default:
                     return {
-                pane: 'pane_hkisland_district_0',
-                stroke: false,
+                pane: 'pane_hkisland_0',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
                 fillOpacity: 1,
-                fillPattern: pattern_hkisland_district_0_0,
+                fillColor: 'rgba(200,99,185,1.0)',
                 interactive: true,
             }
                     break;
             }
         }
-        map.createPane('pane_hkisland_district_0');
-        map.getPane('pane_hkisland_district_0').style.zIndex = 400;
-        map.getPane('pane_hkisland_district_0').style['mix-blend-mode'] = 'normal';
-        var layer_hkisland_district_0 = new L.geoJson(json_hkisland_district_0, {
+        map.createPane('pane_hkisland_0');
+        map.getPane('pane_hkisland_0').style.zIndex = 400;
+        map.getPane('pane_hkisland_0').style['mix-blend-mode'] = 'normal';
+        var layer_hkisland_0 = new L.geoJson(json_hkisland_0, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_hkisland_district_0',
-            layerName: 'layer_hkisland_district_0',
-            pane: 'pane_hkisland_district_0',
-            onEachFeature: pop_hkisland_district_0,
-            style: style_hkisland_district_0_0,
+            dataVar: 'json_hkisland_0',
+            layerName: 'layer_hkisland_0',
+            pane: 'pane_hkisland_0',
+            onEachFeature: pop_hkisland_0,
+            style: style_hkisland_0_0,
         });
-        bounds_group.addLayer(layer_hkisland_district_0);
-        map.addLayer(layer_hkisland_district_0);
+        bounds_group.addLayer(layer_hkisland_0);
+        map.addLayer(layer_hkisland_0);
         map.createPane('pane_OpenStreetMap_1');
         map.getPane('pane_OpenStreetMap_1').style.zIndex = 401;
         var layer_OpenStreetMap_1 = L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             pane: 'pane_OpenStreetMap_1',
-            opacity: 0.3,
+            opacity: 0.4,
             attribution: '',
             minZoom: 1,
             maxZoom: 28,
@@ -734,7 +794,7 @@
                 return this._div;
             };
             title.update = function () {
-                this._div.innerHTML = '<h2>Hong Kong District</h2>';
+                this._div.innerHTML = '<h2>Hong Kong Sub District</h2>';
             };
             title.addTo(map);
         setBounds();
